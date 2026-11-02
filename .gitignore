@@ -7,9 +7,8 @@ Icon?
 *.zip
 *.pdf
 
-# Réglages personnels d'Obsidian (le coffre est le dossier notes/)
-.obsidian/workspace*.json
-.obsidian/plugins/
+# Obsidian (le coffre est la racine du dépôt) : réglages personnels
+.obsidian/
 .trash/
 
 # Générés par outils/build_index.py (en local et par l'Action GitHub)

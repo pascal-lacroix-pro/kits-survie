@@ -47,15 +47,16 @@ Les animations sont en `.mp4` (balise `<video>`), pas en GIF.
 
 ## Ajouter ou modifier une note (avec Obsidian)
 
-Le dossier `notes/` est un coffre Obsidian déjà réglé (`notes/.obsidian/`) :
-liens Markdown relatifs, images collées dans le dossier `images/` de l'atelier.
+Le coffre Obsidian est la racine du dépôt. Réglages (dans `.obsidian/`, non versionné) :
+liens Markdown relatifs, pièces jointes dans `./images`, modèles dans `notes/_modeles`.
 
-1. Obsidian → « Ouvrir un dossier comme coffre » → choisir `notes/`
+1. Obsidian → « Ouvrir un dossier comme coffre » → choisir `KITS_SURVIE/`
 2. Nouvelle note : la créer dans le dossier de l'atelier, préfixée par son ordre
    (`03-ma-note.md`), puis insérer le modèle *Nouvelle note* (palette ⌘P → « Modèles »)
    et compléter l'en-tête
 3. Rédiger ; coller ou glisser les images directement
-4. Publier : `git add . && git commit -m "Note X" && git push`
+4. Publier : plugin *Git* (⌘P → « Git: Commit-and-sync »)
+   ou `git add . && git commit -m "Note X" && git push`
 
 À chaque push, l'Action GitHub `.github/workflows/pages.yml` regénère le sommaire
 et la recherche puis publie le site (≈ 1 min) :
