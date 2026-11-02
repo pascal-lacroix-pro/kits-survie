@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            color: #999;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .section {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.2em;
+            padding: 20%;
+        }
+
+        .section:nth-of-type(1) {
+            background: darkorchid;
+            color: #fff;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+        }
+        .section:nth-of-type(3) {
+            background: deeppink;
+            clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+            color: #fff;
+        }
+        .section:nth-of-type(5) {
+            background: #666;
+            clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="section">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio exercitationem doloribus harum ullam nesciunt consectetur qui repudiandae ad, quidem aliquid libero expedita veritatis eaque id dicta porro tempora laborum sequi!</p>
+        </section>
+        <section class="section">
+            <h1>Exercitationem, nihil odit.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio exercitationem doloribus harum ullam nesciunt consectetur qui repudiandae ad, quidem aliquid libero expedita veritatis eaque id dicta porro tempora laborum sequi!</p>
+        </section>
+        <section class="section">
+            <h1>Reiciendis, dolore veritatis!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio exercitationem doloribus harum ullam nesciunt consectetur qui repudiandae ad, quidem aliquid libero expedita veritatis eaque id dicta porro tempora laborum sequi!</p>
+        </section>
+        <section class="section">
+            <h1>Unde, officia natus.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio exercitationem doloribus harum ullam nesciunt consectetur qui repudiandae ad, quidem aliquid libero expedita veritatis eaque id dicta porro tempora laborum sequi!</p>
+        </section>
+        <section class="section">
+            <h1>Unde, officia natus.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio exercitationem doloribus harum ullam nesciunt consectetur qui repudiandae ad, quidem aliquid libero expedita veritatis eaque id dicta porro tempora laborum sequi!</p>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Défi 7</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #e7e7e6;
+        font-family: "trebuchet MS", sans-serif;
+        color: #777;
+      }
+
+      .card {
+        width: 300px;
+        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        background: #fff;
+        padding: 0;
+        overflow: hidden;
+      }
+      .card-image {
+        width: 100%;
+      }
+      .card-title {
+        color: #555;
+        margin: 0;
+      }
+
+      .card-content {
+        padding: 1.5em;
+      }
+
+      .btn {
+        display: block;
+        padding: 1em;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 5px;
+      }
+      .btn::after {
+        content: "\2192";
+        margin-left: 0.5em;
+      }
+      .btn-primary {
+        background: #e6ecff;
+        color: #406cff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="images/B046BC47-4F7A-4978-8E42-B2C1C3B34FAC.png"
+        alt="Utah sunset"
+        class="card-image"
+      />
+      <div class="card-content">
+        <h1 class="card-title">Utah sunset</h1>
+        <p>
+          Lorem ipsum dolor, sit amet <strong>consectetur</strong> adipisicing
+          elit. Dolores, quibusdam ducimus.
+        </p>
+        <a href="#" class="btn btn-primary">Explore</a>
+      </div>
+    </div>
+  </body>
+</html>

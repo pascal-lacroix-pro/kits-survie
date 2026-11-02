@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --containerWidth: 600px;
+        }
+        body {
+            /* FONT */
+            font-family: Arial, sans-serif;
+        }
+
+/* FRAMEWORK */
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+          width: 100%;
+          max-width: var(--containerWidth);
+          margin: auto;
+        }
+
+        .alert {
+          /* BOX */
+          padding: 1em;
+          margin: 1em;
+          border: 1px solid;
+          border-radius: 0.3em;
+        }
+
+        .alert-primary {
+            background: #CCE5FF;
+            color: #004085;
+            border-color: #b8daff;
+        }
+
+        .alert-secondary {
+          background: #E2E3E5;
+          border-color: #d6d8db;
+          color: #383d41;
+        }
+
+        .alert-success {
+          background: #D4EDDA;
+          border-color: #c3e6cb;
+          color: #155724;
+        }
+
+        .alert-danger {
+          background: #F8D7DA;
+          border-color: #f5c6cb;
+          color: #721c24;
+        }
+
+        .alert-warning {
+          background: #FFF3CC;
+          border-color: #ffeeba;
+          color: #856404;
+        }
+
+        .alert-info {
+            background: #CCE5FF;
+            color: #004085;
+            border-color: #b8daff;
+        }
+
+
+    </style>
+</head>
+<body class="container">
+    <div class="alert alert-primary" role="alert">
+        This is a primary alert—check it out!
+      </div>
+      <div class="alert alert-secondary" role="alert">
+        This is a secondary alert—check it out!
+      </div>
+      <div class="alert alert-success" role="alert">
+        This is a success alert—check it out!
+      </div>
+      <div class="alert alert-danger" role="alert">
+        This is a danger alert—check it out!
+      </div>
+      <div class="alert alert-warning" role="alert">
+        This is a warning alert—check it out!
+      </div>
+      <div class="alert alert-info" role="alert">
+        This is a info alert—check it out!
+      </div>
+</body>
+</html>

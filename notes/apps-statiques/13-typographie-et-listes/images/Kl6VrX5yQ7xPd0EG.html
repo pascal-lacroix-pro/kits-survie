@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #1ba2b8;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 1.5em;
+        color: #555;
+      }
+
+      .tasks-list {
+        background: #fff;
+        width: 250px;
+        margin: auto;
+        padding: 1.5em 3em;
+        border-radius: 1em;
+        list-style: "-   ";
+      }
+      .task:not(:last-of-type) {
+        margin-bottom: 1em;
+      }
+      .task.done {
+        color: #ccc;
+        list-style: "✓   ";
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul class="tasks-list">
+      <li class="task done">Bread</li>
+      <li class="task">Cheese</li>
+      <li class="task">Coffee</li>
+    </ul>
+  </body>
+</html>

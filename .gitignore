@@ -1,0 +1,8 @@
+.DS_Store
+*.tmp
+.dropbox*
+Icon?
+
+# Fichiers lourds : gardés sur Dropbox / Moodle, pas dans le dépôt
+*.zip
+*.pdf

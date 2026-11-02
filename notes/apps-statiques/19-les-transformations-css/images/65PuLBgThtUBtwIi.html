@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 300px;
+            margin: 2em auto;
+            color: #777;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.2em;;
+        }
+
+        .card {
+            box-shadow: #aaa 0 0 15px;
+            padding: 2em;
+            position: relative;
+        }
+        .card-title {
+            color: rgb(166, 193, 230);
+            margin-top: 0;
+        }
+        .card-content {
+            border-top: rgb(166, 193, 230) 1px solid;
+            border-bottom: rgb(166, 193, 230) 1px solid;
+            margin: 1em 0;
+        }
+        .card-published-at {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(-90deg) translateX(-200px);
+            transform-origin: bottom left;
+            font-size: 1.8em;
+            background: rgb(166, 193, 230);
+            padding: 0em .5em;
+            color: #fff;
+        }
+
+
+    </style>
+</head>
+<body>
+    <article class="card">
+        <header class="card-header">
+            <h1 class="card-title">Lorem, ipsum dolor.</h1>
+            <div><time class="card-published-at">2021-01-01</time></div>
+        </header>
+        <div class="card-content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores impedit corrupti blanditiis, odit dolorum rerum repellendus non fugiat eligendi consequatur omnis dolor, explicabo odio nostrum eos excepturi doloribus voluptatem. Alias?</p>
+        </div>
+        <footer class="card-footer">
+            <div>Author: lorem2</div>
+        </footer>
+    </article>
+</body>
+</html>
