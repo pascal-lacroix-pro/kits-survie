@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kits de survie</title>
+  <meta name="description" content="Notes de cours en lecture seule : les kits de survie.">
+  <link rel="stylesheet" href="assets/vendor/github.min.css" media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" href="assets/vendor/github-dark.min.css" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="saut" href="#contenu" id="saut">Aller au contenu</a>
+
+  <header class="barre">
+    <button type="button" id="btn-menu" class="btn-menu" aria-expanded="false" aria-controls="menu">Sommaire</button>
+    <a class="marque" href="#">Kits de survie</a>
+    <form id="form-recherche" role="search">
+      <label for="recherche" class="sr-only">Rechercher dans les notes</label>
+      <input type="search" id="recherche" placeholder="Rechercher un mot…" autocomplete="off" spellcheck="false">
+    </form>
+  </header>
+
+  <div class="cadre">
+    <nav id="menu" aria-label="Sommaire des notes" tabindex="-1">
+      <p class="chargement">Chargement du sommaire…</p>
+    </nav>
+    <main id="contenu" tabindex="-1">
+      <noscript><p>Cette page a besoin de JavaScript pour afficher les notes.</p></noscript>
+    </main>
+  </div>
+
+  <p id="statut" class="sr-only" role="status" aria-live="polite"></p>
+
+  <script src="assets/vendor/marked.min.js"></script>
+  <script src="assets/vendor/highlight.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

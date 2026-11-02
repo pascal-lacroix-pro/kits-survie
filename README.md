@@ -12,7 +12,8 @@ outils/                              ← scripts de conversion
 
 - Cours disponible : `apps-statiques` (59 notes, ateliers 1 à 25 + mémentos)
 - Un fichier `.md` par note, préfixé par son ordre dans l'atelier
-- `index.html` : page de lecture (à venir)
+- `index.html` + `assets/` : page de lecture en lecture seule (sans framework ; `marked` et `highlight.js` sont copiés dans `assets/vendor/`, aucun service externe)
+- `notes/index.json` et `notes/search.json` : sommaire et recherche, **générés** par `outils/build_index.py`
 
 ## En-tête d'une note
 
@@ -49,4 +50,7 @@ Les animations sont en `.mp4` (balise `<video>`), pas en GIF.
 1. Créer ou éditer le fichier dans `notes/<cours>/<atelier>/`
 2. Reprendre l'en-tête ci-dessus
 3. Rédiger en Markdown
-4. Versionner : `git add . && git commit -m "Ajout note X" && git push`
+4. Régénérer le sommaire et la recherche : `python3 outils/build_index.py`
+5. Tester en local : `python3 -m http.server 8000` puis ouvrir http://127.0.0.1:8000
+   (ouvrir `index.html` directement ne fonctionne pas : le navigateur bloque la lecture des notes)
+6. Versionner : `git add . && git commit -m "Ajout note X" && git push`
