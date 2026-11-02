@@ -16,7 +16,7 @@ ordre: 2
 
 ## 1. Crée un dossier et ouvre le avec VSCODE
 
-Quand on démarre une application web, on crée un dossier qui va reprendre tous les fichiers de notre application.
+Quand on démarre une application web, on crée un dossier qui va reprendre tous les fichiers de notre application. !! !!!!
 
 ![](images/vkiaReJccFegMnVG.png)
 
