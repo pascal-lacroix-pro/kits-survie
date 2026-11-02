@@ -6,3 +6,12 @@ Icon?
 # Fichiers lourds : gardés sur Dropbox / Moodle, pas dans le dépôt
 *.zip
 *.pdf
+
+# Réglages personnels d'Obsidian (le coffre est le dossier notes/)
+.obsidian/workspace*.json
+.obsidian/plugins/
+.trash/
+
+# Générés par outils/build_index.py (en local et par l'Action GitHub)
+notes/index.json
+notes/search.json

@@ -13,7 +13,7 @@ outils/                              ← scripts de conversion
 - Cours disponible : `apps-statiques` (59 notes, ateliers 1 à 25 + mémentos)
 - Un fichier `.md` par note, préfixé par son ordre dans l'atelier
 - `index.html` + `assets/` : page de lecture en lecture seule (sans framework ; `marked` et `highlight.js` sont copiés dans `assets/vendor/`, aucun service externe)
-- `notes/index.json` et `notes/search.json` : sommaire et recherche, **générés** par `outils/build_index.py`
+- `notes/index.json` et `notes/search.json` : sommaire et recherche, **générés** par `outils/build_index.py` (non versionnés)
 
 ## En-tête d'une note
 
@@ -45,12 +45,22 @@ Les animations sont en `.mp4` (balise `<video>`), pas en GIF.
   sans précaution (les corrections manuelles seraient écrasées).
 - `outils/gif_vers_mp4.py` : GIF -> MP4 (nécessite `ffmpeg`).
 
-## Ajouter ou modifier une note
+## Ajouter ou modifier une note (avec Obsidian)
 
-1. Créer ou éditer le fichier dans `notes/<cours>/<atelier>/`
-2. Reprendre l'en-tête ci-dessus
-3. Rédiger en Markdown
-4. Régénérer le sommaire et la recherche : `python3 outils/build_index.py`
-5. Tester en local : `python3 -m http.server 8000` puis ouvrir http://127.0.0.1:8000
-   (ouvrir `index.html` directement ne fonctionne pas : le navigateur bloque la lecture des notes)
-6. Versionner : `git add . && git commit -m "Ajout note X" && git push`
+Le dossier `notes/` est un coffre Obsidian déjà réglé (`notes/.obsidian/`) :
+liens Markdown relatifs, images collées dans le dossier `images/` de l'atelier.
+
+1. Obsidian → « Ouvrir un dossier comme coffre » → choisir `notes/`
+2. Nouvelle note : la créer dans le dossier de l'atelier, préfixée par son ordre
+   (`03-ma-note.md`), puis insérer le modèle *Nouvelle note* (palette ⌘P → « Modèles »)
+   et compléter l'en-tête
+3. Rédiger ; coller ou glisser les images directement
+4. Publier : `git add . && git commit -m "Note X" && git push`
+
+À chaque push, l'Action GitHub `.github/workflows/pages.yml` regénère le sommaire
+et la recherche puis publie le site (≈ 1 min) :
+https://pascal-lacroix-pro.github.io/kits-survie/
+
+Tester en local (facultatif) : `python3 outils/build_index.py` puis
+`python3 -m http.server 8000` et ouvrir http://127.0.0.1:8000
+(ouvrir `index.html` directement ne fonctionne pas : le navigateur bloque la lecture des notes).

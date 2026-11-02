@@ -31,7 +31,11 @@ def lire(md):
         for ligne in m.group(1).splitlines():
             k, _, v = ligne.partition(':')
             v = v.strip()
-            meta[k.strip()] = json.loads(v) if v.startswith('"') else v
+            if v[:1] == '"':
+                v = json.loads(v)
+            elif v[:1] == "'" and v[-1:] == "'":
+                v = v[1:-1].replace("''", "'")
+            meta[k.strip()] = v
     return meta, corps
 
 
@@ -44,20 +48,26 @@ def brut(corps):
 
 
 index, recherche = [], []
-for dossier_cours in sorted(p for p in NOTES.iterdir() if p.is_dir()):
+def dossiers(racine):
+    """Sous-dossiers, sauf .obsidian, _modeles, images…"""
+    return sorted(p for p in racine.iterdir() if p.is_dir() and p.name[0] not in '._' and p.name != 'images')
+
+
+for dossier_cours in dossiers(NOTES):
     ateliers = []
-    for dossier_at in sorted(p for p in dossier_cours.iterdir() if p.is_dir()):
+    for dossier_at in dossiers(dossier_cours):
         fichiers = sorted(dossier_at.glob('*.md'))
         if not fichiers:
             continue
         notes, titre_at = [], ''
         for md in fichiers:
             meta, corps = lire(md)
-            titre_at = phrase(meta.get('atelier_titre', dossier_at.name))
+            titre_at = phrase(meta.get('atelier_titre') or dossier_at.name)
             chemin = md.relative_to(NOTES).as_posix()
             notes.append({'titre': meta.get('titre', md.stem), 'chemin': chemin})
             recherche.append({'c': chemin, 't': meta.get('titre', md.stem), 'a': titre_at, 'x': brut(corps)})
-        numero = int(meta.get('atelier', 0))
+        num = str(meta.get('atelier') or '') or re.match(r'\d*', dossier_at.name).group()
+        numero = int(num) if num.isdigit() else 0
         ateliers.append({'id': dossier_at.name, 'numero': numero, 'titre': titre_at, 'notes': notes})
     if ateliers:
         index.append({'id': dossier_cours.name, 'titre': COURS.get(dossier_cours.name, dossier_cours.name),
