@@ -29,13 +29,9 @@ ordre: 2
 
 Les valeurs contenant `:` ou `&` sont mises entre guillemets.
 
-## Fichiers non versionnés
+## Médias
 
-Les `.zip` et les `.pdf` sont exclus du dépôt (`.gitignore`) pour garder un
-dépôt léger. Ils restent dans les dossiers `images/` sur Dropbox.
-⚠️ 9 notes contiennent des liens vers ces fichiers (22 liens au total) : ils sont
-cassés en ligne tant qu'ils ne pointent pas vers Moodle ou Dropbox.
-
+Images, vidéos, PDF et zip sont versionnés dans les dossiers `images/` des ateliers.
 Les animations sont en `.mp4` (balise `<video>`), pas en GIF.
 
 ## Outils

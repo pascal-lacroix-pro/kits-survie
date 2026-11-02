@@ -451,9 +451,9 @@ RQ: Dans les mises en page suivantes, les éléments prennent toute la hauteur d
 
 📎 [b4-flexbox-cheat-sheet-v400.pdf](images/MdmwmriQxrVKOTLd.pdf)
 
-📎 [Bad-Flexbox-devfest.pdf](images/y3AgDMYStHidD2m3.pdf)
+🔗 [Flexbox, place à la gueule de bois ! (Raphaël Goetter, Speaker Deck)](https://speakerdeck.com/goetter/flexbox-place-a-la-gueule-de-bois)
 
-📎 [flexrox.pdf](images/s34XvDvTiDm9uUgc.pdf)
+🔗 [FlexRox (Raphaël Goetter, Speaker Deck)](https://speakerdeck.com/goetter/flexrox)
 
 📎 [memento_flexbox.zip](images/vaBFuawvfcvtIC7k.zip)
 

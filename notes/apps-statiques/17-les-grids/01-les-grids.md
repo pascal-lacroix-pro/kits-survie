@@ -362,5 +362,3 @@ Astuce:
 📎 [grid-cheatsheet (1).pdf](images/DzuvWsvLpxDMgE7G.pdf)
 
 📎 [grids.pdf](images/1haPU9tP5D0o3pID.pdf)
-
-📎 [grid-layout-atelier-v2.pdf](images/m2hR8r4D8a6RVQLh.pdf)
