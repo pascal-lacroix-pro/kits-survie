@@ -28,9 +28,14 @@ ordre: 1
 
 ---
 
-> **VIDÉO:**[https://www.youtube.com/watch?v=Oh_aI1NxlpA&feature=emb_logo](https://www.youtube.com/watch?v=Oh_aI1NxlpA&feature=emb_logo)
-
-▶️ [Vidéo](https://www.youtube.com/watch?v=Oh_aI1NxlpA)
+```embed
+title: "Comment fonctionne une page web ?"
+image: "https://i.ytimg.com/vi/Oh_aI1NxlpA/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=Oh_aI1NxlpA"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 

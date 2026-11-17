@@ -10,7 +10,14 @@ ordre: 1
 
 **VIDÉOS:**
 
-▶️ [Vidéo](https://www.youtube.com/watch?v=frjm3jCXRU0)
+```embed
+title: "CSS - Les Positions"
+image: "https://i.ytimg.com/vi/frjm3jCXRU0/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=frjm3jCXRU0"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 

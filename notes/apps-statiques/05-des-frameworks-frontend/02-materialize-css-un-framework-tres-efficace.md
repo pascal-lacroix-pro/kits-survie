@@ -43,15 +43,87 @@ ordre: 2
 
 **VIDÉOS**
 
-- [1. MATERIALIZE - Trois manières de l'installer](https://www.youtube.com/watch?v=x5I6d_Zo5QU&feature=youtu.be)
-- [2. MATERIALIZE - Principes de base](https://www.youtube.com/watch?v=O0qmVLGU6R8)
-- [3. MATERIALIZE - La gestion des icônes](https://www.youtube.com/watch?v=UuJtmzO2nb8)
-- [4. MATERIALIZE - Les boutons](https://www.youtube.com/watch?v=snua2Fqo0CI)
-- [5. MATERIALIZE - Le module de grille responsive](https://www.youtube.com/watch?v=fyQlk-5zSoc)
-- [6. MATERIALIZE - Le module des visibilités](https://www.youtube.com/watch?v=7QHhcBQ1Mzo)
-- [7. MATERIALIZE - Le module des navbars](https://www.youtube.com/watch?v=8T2aqWQfYqc)
-- [8. MATERIALIZE - Utilisation d'un fichier de surcharge](https://www.youtube.com/watch?v=BHrZUrJBIUE)
-- [9. MATERIALIZE - Utilisation de la version SASS avec le bundler PARCEL](https://www.youtube.com/watch?v=NSlMB7rUzto)
+```embed
+title: "1. MATERIALIZE - Trois manières de l'installer"
+image: "https://i.ytimg.com/vi/x5I6d_Zo5QU/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=x5I6d_Zo5QU"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "2. MATERIALIZE - Principes de base"
+image: "https://i.ytimg.com/vi/O0qmVLGU6R8/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=O0qmVLGU6R8"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "3. MATERIALIZE - La gestion des icônes"
+image: "https://i.ytimg.com/vi/UuJtmzO2nb8/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=UuJtmzO2nb8"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "4. MATERIALIZE - Les boutons"
+image: "https://i.ytimg.com/vi/snua2Fqo0CI/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=snua2Fqo0CI"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "5. MATERIALIZE - Le module de grille responsive"
+image: "https://i.ytimg.com/vi/fyQlk-5zSoc/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=fyQlk-5zSoc"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "6. MATERIALIZE - Le module des visibilités"
+image: "https://i.ytimg.com/vi/7QHhcBQ1Mzo/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=7QHhcBQ1Mzo"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "7. MATERIALIZE - Le module des navbars"
+image: "https://i.ytimg.com/vi/8T2aqWQfYqc/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=8T2aqWQfYqc"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "8. MATERIALIZE - Utilisation d'un fichier de surcharge"
+image: "https://i.ytimg.com/vi/BHrZUrJBIUE/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=BHrZUrJBIUE"
+favicon: ""
+aspectRatio: "56.25"
+```
+
+```embed
+title: "9. MATERIALIZE - Utilisation de la version SASS avec le bundler PARCEL"
+image: "https://i.ytimg.com/vi/NSlMB7rUzto/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=NSlMB7rUzto"
+favicon: ""
+aspectRatio: "56.25"
+```
+
 
 ---
 
@@ -463,8 +535,16 @@ Et bien d'autres classes, modules et composants...
 ## Pour aller plus loin
 
 - [https://materializecss.com/](https://materializecss.com/)
-- [https://www.youtube.com/watch?v=TSI1TIsAFGI](https://www.youtube.com/watch?v=TSI1TIsAFGI)
 - [https://medium.com/@swarnakishore/getting-started-with-materialize-css-cf8548969fdb](https://medium.com/@swarnakishore/getting-started-with-materialize-css-cf8548969fdb)
+
+```embed
+title: "Framework CSS - Materialize"
+image: "https://i.ytimg.com/vi/TSI1TIsAFGI/hqdefault.jpg"
+description: "Vidéo YouTube · Code By Simon"
+url: "https://www.youtube.com/watch?v=TSI1TIsAFGI"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 

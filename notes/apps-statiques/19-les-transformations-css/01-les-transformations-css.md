@@ -10,7 +10,14 @@ ordre: 1
 
 ## Les transformations 2D
 
-▶️ [Vidéo](https://www.youtube.com/watch?v=--VPWwxYVT4)
+```embed
+title: "CSS - Les transformations"
+image: "https://i.ytimg.com/vi/--VPWwxYVT4/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=--VPWwxYVT4"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ### Déplacer ou translation avec translate()
 

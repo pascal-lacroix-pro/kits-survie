@@ -41,6 +41,7 @@ def lire(md):
 
 def brut(corps):
     t = re.sub(r'<video.*?</video>', ' ', corps, flags=re.S)
+    t = re.sub(r'```embed\n.*?^title: "?(.*?)"?$.*?^```', r'\1', t, flags=re.S | re.M)
     t = re.sub(r'!\[[^\]]*\]\([^)]*\)', ' ', t)
     t = re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', t)
     t = re.sub(r'[#>*`|]|^-{3,}$|^\s*(?:-|\d+\.)\s', ' ', t, flags=re.M)

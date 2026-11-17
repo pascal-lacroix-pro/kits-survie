@@ -102,6 +102,7 @@
     const base = new URL('notes/' + note.chemin.split('/').slice(0, -1).join('/') + '/', location.href);
     contenu.innerHTML = `<article class="note">${marked.parse(corps)}</article>${pager(note)}`;
     const article = $('.note', contenu);
+    integrerEmbeds(article);
     corrigerRessources(article, base);
     colorerCode(article);
     gererVideos(article);
@@ -126,6 +127,47 @@
       el.setAttribute(attr, new URL(v, base).href);
     });
     racine.querySelectorAll('img').forEach(i => { i.loading = 'lazy'; i.decoding = 'async'; });
+  }
+
+  /* Blocs ```embed du plugin Obsidian « Link Embed » : vidéo YouTube (chargée au clic) ou carte de lien. */
+  function integrerEmbeds(racine) {
+    racine.querySelectorAll('pre > code.language-embed').forEach(code => {
+      const d = {};
+      code.textContent.split('\n').forEach(ligne => {
+        const m = ligne.match(/^(\w+):\s*(.*)$/);
+        if (!m) return;
+        let v = m[2].trim();
+        if (v.startsWith('"')) try { v = JSON.parse(v); } catch (e) { v = v.slice(1, -1); }
+        d[m[1]] = v;
+      });
+      if (!/^https?:/i.test(d.url || '')) return;
+      const titre = d.title || d.url;
+      const yt = d.url.match(/(?:youtube\.com\/watch\?(?:.*&)?v=|youtu\.be\/)([\w-]{11})/);
+      const figure = document.createElement('figure');
+      if (yt) {
+        figure.className = 'video-yt';
+        figure.innerHTML = `
+          <button type="button" class="video-lancer" aria-label="Lire la vidéo : ${esc(titre)}">
+            <img src="https://i.ytimg.com/vi/${yt[1]}/hqdefault.jpg" alt="" loading="lazy" decoding="async">
+            <span class="video-play" aria-hidden="true"></span>
+          </button>
+          <figcaption><a href="${esc(d.url)}">${esc(titre)}</a></figcaption>`;
+        $('.video-lancer', figure).addEventListener('click', e => {
+          const iframe = document.createElement('iframe');
+          iframe.src = `https://www.youtube-nocookie.com/embed/${yt[1]}?autoplay=1&rel=0`;
+          iframe.title = titre;
+          iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+          iframe.allowFullscreen = true;
+          e.currentTarget.replaceWith(iframe);
+          iframe.focus();
+        });
+      } else {
+        figure.className = 'carte-lien';
+        figure.innerHTML = `<a href="${esc(d.url)}">${d.image ? `<img src="${esc(d.image)}" alt="" loading="lazy">` : ''}
+          <span><strong>${esc(titre)}</strong>${d.description ? `<small>${esc(d.description)}</small>` : ''}</span></a>`;
+      }
+      code.parentElement.replaceWith(figure);
+    });
   }
 
   function colorerCode(racine) {

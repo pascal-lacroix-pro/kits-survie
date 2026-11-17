@@ -10,9 +10,23 @@ ordre: 1
 
 ---
 
-▶️ [Vidéo](https://www.youtube.com/watch?v=zjeBqsoXYPo)
+```embed
+title: "Les données structurées ou microdata - Version HTML"
+image: "https://i.ytimg.com/vi/zjeBqsoXYPo/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=zjeBqsoXYPo"
+favicon: ""
+aspectRatio: "56.25"
+```
 
-▶️ [Vidéo](https://www.youtube.com/watch?v=2UVL85z_2a0)
+```embed
+title: "Les données structurées ou microdata: Version JS"
+image: "https://i.ytimg.com/vi/2UVL85z_2a0/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=2UVL85z_2a0"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 

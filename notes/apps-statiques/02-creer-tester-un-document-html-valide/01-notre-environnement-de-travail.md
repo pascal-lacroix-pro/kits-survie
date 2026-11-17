@@ -12,9 +12,23 @@ ordre: 1
 
 **VIDÉOS**
 
-▶️ [Vidéo](https://www.youtube.com/watch?v=7k94fWJo4eI)
+```embed
+title: "1. CRÉER ET TESTER UN FICHER HTML"
+image: "https://i.ytimg.com/vi/7k94fWJo4eI/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=7k94fWJo4eI"
+favicon: ""
+aspectRatio: "56.25"
+```
 
-▶️ [Vidéo](https://www.youtube.com/watch?v=URJ2iWtnRrc)
+```embed
+title: "2. INSTALLER ET TESTER VSCODE"
+image: "https://i.ytimg.com/vi/URJ2iWtnRrc/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=URJ2iWtnRrc"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 

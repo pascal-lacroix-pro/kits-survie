@@ -8,7 +8,14 @@ ordre: 3
 
 # 2-03. Les 7 principes fondamentaux du HTML
 
-▶️ [Vidéo](https://www.youtube.com/watch?v=_QmhHd3ZVMk)
+```embed
+title: "1. Les 5 principes du HTML"
+image: "https://i.ytimg.com/vi/_QmhHd3ZVMk/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=_QmhHd3ZVMk"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 

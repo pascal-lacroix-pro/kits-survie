@@ -8,7 +8,14 @@ ordre: 4
 
 # 2-04 Une structure HTML valide
 
-▶️ [Vidéo](https://www.youtube.com/watch?v=GLBBjOTevsY)
+```embed
+title: "2. Une structure HTML valide"
+image: "https://i.ytimg.com/vi/GLBBjOTevsY/hqdefault.jpg"
+description: "Vidéo YouTube · Pascal LACROIX"
+url: "https://www.youtube.com/watch?v=GLBBjOTevsY"
+favicon: ""
+aspectRatio: "56.25"
+```
 
 ---
 

@@ -8,15 +8,21 @@ ordre: 2
 
 # 2-02. Créer un premier fichier HTML et le tester
 
-**VIDÉO:**
+```embed
+title: "2. INSTALLER ET TESTER VSCODE"
+image: "https://i.ytimg.com/vi/URJ2iWtnRrc/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGFsgYChlMA8=&rs=AOn4CLA1UBoNAK7yd7PmSAmHO2QosSSSgw"
+description: "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos proches et le monde entier."
+url: "https://www.youtube.com/watch?v=URJ2iWtnRrc"
+favicon: ""
+aspectRatio: "56.25"
+```
 
-▶️ [Vidéo](https://www.youtube.com/watch?v=URJ2iWtnRrc)
 
 ---
 
 ## 1. Crée un dossier et ouvre le avec VSCODE
 
-Quand on démarre une application web, on crée un dossier qui va reprendre tous les fichiers de notre application. !! !!!!
+Quand on démarre une application web, on crée un dossier qui va reprendre tous les fichiers de notre application. 
 
 ![](images/vkiaReJccFegMnVG.png)
 
